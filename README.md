@@ -13,3 +13,7 @@ Subjects:
 - VueJS
 - PayloadCMS
 - Firestore
+
+Mahasiswa: 
+- Nama: Muhammad Nabil Akhtar Raya Amoriza
+- NRP: 5025221021
