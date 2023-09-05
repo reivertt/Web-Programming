@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neko Ja</title>
     <link rel="icon" href="https://www.pngmart.com/files/15/Black-Cat-Vector-PNG-File.png">
+    <link href="https://db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara" rel="stylesheet">
     <style>
         body {
+            font-family: "Candara";
             background-color:antiquewhite;
+            margin: 0;
         }
 
         table {
-          font-family: arial, sans-serif;
           border-collapse: collapse;
           width: 100%;
         }
@@ -35,17 +37,18 @@
             background-color: rgb(0, 0, 225);
             color: white;
             text-align: center;
-            padding: 5px;
+            /* padding: 5px; */
+            font-size: 100px;
         }
 
         img {
             width: 100%;
-            max-height: 800px;
+            height: auto;
         }
 
         iframe {
             width: 100%;
-            height: 50rem;
+            height: 100%;
         }
         
         blockquote {
@@ -56,7 +59,7 @@
             margin: 20px;
         }
 
-        .islit, .h{
+        .container{
             background-color: white;
             border-radius: 20px;
             margin: 30px;
@@ -66,102 +69,133 @@
 
         .h {
             text-align: center;
+            justify-content: space-between;
+            align-items: center;
         }
 
+        .groupGrid {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+        }
+
+        .groupFlex {
+            display:flex;
+            flex-direction: row;
+        }
         
+        .subgroup {
+            display: flex;
+            flex-flow: column;
+        }
         
-        </style>
+    </style>
 </head>
 <body>
     <header>
-        <h1>Cats</h1>
+        <span>Cats</span>
     </header>
-    <div class="h">
-        <h1>I like cats</h1>
-        <h2>I like cats</h2>
-        <h3>I like cats</h3>
-        <h4>I like cats</h4>
-        <h5>I like cats</h5>
-        <h6>I like cats</h6>
-        <p>I like cats</p>
+    <div class="container h groupFlex">
+        <h1>Ucing</h1>
+        <h2>قطة</h2>
+        <h3>Kucing</h3>
+        <h4>猫</h4>
+        <h5>katt</h5>
+        <h6>кот</h6>
+        <p>고양이</p>
         <a href="https://en.wikipedia.org/wiki/Cat">Cats, The Wiki Page</a>
     </div>
-    <br>
-    <div class="islit">
-        <div>
-        <img src="https://www.rd.com/wp-content/uploads/2023/04/GettyImages-1201778878-e1681753130752.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div>
-        <img src="https://c4.wallpaperflare.com/wallpaper/801/136/845/cat-4k-widescreen-hd-wallpaper-preview.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div>
-        <img src="https://images.hdqwalls.com/download/cat-sleeping-qe-1920x1080.jpg" class="d-block w-100" alt="...">
+    <div class="container h"><h1>More Cat Media</h1></div>
+
+    <div class="container groupGrid">
+        <iframe src="https://www.nyan.cat" frameborder="0"></iframe>
+        <div class="subgroup">
+            <img src="https://www.rd.com/wp-content/uploads/2023/04/GettyImages-1201778878-e1681753130752.jpg" class="d-block w-100" alt="cat1">
+            <img src="https://c4.wallpaperflare.com/wallpaper/801/136/845/cat-4k-widescreen-hd-wallpaper-preview.jpg" class="d-block w-100" alt="cat2">
+            <img src="https://images.hdqwalls.com/download/cat-sleeping-qe-1920x1080.jpg" class="d-block w-100" alt="cat3">
         </div>
     </div>
-    <div class="islit h"><h1>More Cat Pictures</h1></div>
-    <iframe src="https://stock.adobe.com/id/search?k=cat" frameborder="0"></iframe>
     
     <blockquote cite="https://www.goodhousekeeping.com/life/pets/g25360151/cat-quotes/" >"If a cat could talk, they wouldn't." -Nan Porter</blockquote>
-    <div class="islit">
-        <h1>List of Cats</h1>
-        <ul>
-            <li>Siamese cat</li>
-            <li>Persian cat</li>
-            <li>Maine Coon cat</li>
-            <li>Abyssinian cat</li>
-<li>Sphynx cat</li>
-<li>Aegean cat</li>
-<li>American Bobtail cat</li>
-<li>American Curl cat</li>
-<li>American Shorthair cat</li>
-<li>American Wirehair cat</li>
-<li>Asian cat</li>
-<li>Balinese cat</li>
-<li>Bengal cat</li>
-<li>Birman cat</li>
-<li>Bombay cat</li>
-<li>British Shorthair cat</li>
-<li>Burmese cat</li>
-<li>Chartreux cat</li>
-<li>Cornish Rex cat</li>
-<li>Devon Rex cat</li>
-<li>Egyptian Mau cat</li>
-<li>European Burmese cat</li>
-<li>Exotic Shorthair cat</li>
-<li>Havana Brown cat</li>
-<li>Japanese Bobtail cat</li>
-<li>Javanese cat</li>
-<li>Khao Manee cat</li>
-<li>Korat cat</li>
-<li>LaPerm cat</li>
-<li>Maine Coon cat</li>
-<li>Norwegian Forest cat</li>
-<li>Ocicat cat</li>
-<li>Oriental Shorthair cat</li>
-<li>Persian cat</li>
-<li>Peterbald cat</li>
-<li>Pixie-bob cat</li>
-<li>Ragdoll cat</li>
-<li>Russian Blue cat</li>
-<li>Savannah cat</li>
-<li>Scottish Fold cat</li>
-<li>Selkirk Rex cat</li>
-<li>Siamese cat</li>
-<li>Singapura cat</li>
-<li>Snowshoe cat</li>
-<li>Somali cat</li>
-<li>Sphynx cat</li>
-<li>Tonkinese cat</li>
-<li>Turkish Angora cat</li>
-<li>Turkish Van cat</li>
-</ul>
-<p>All time favorites:</p>
-<ol>
-    <li>Maine Coon Cats</li>
-            <li>Siamese Cats</li>
-            <li>Scottish Fold Cats</li>
-            <li>Bengal Cats</li>
-            <li>American Shorthair Cats</li>
+    <div class="container">
+        <h1 style="padding-left: 20px;" >List of Cats</h1>
+        <div class="groupFlex">
+            <div>
+                <ul>
+                    <li>Siamese cat</li>
+                    <li>Persian cat</li>
+                    <li>Maine Coon cat</li>
+                    <li>Abyssinian cat</li>
+                    <li>Sphynx cat</li>
+                    <li>Aegean cat</li>
+                    <li>American Bobtail cat</li>
+                    <li>American Curl cat</li>
+                    <li>American Shorthair cat</li>
+                    <li>American Wirehair cat</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Egyptian Mau cat</li>
+                    <li>European Burmese cat</li>
+                    <li>Exotic Shorthair cat</li>
+                    <li>Havana Brown cat</li>
+                    <li>Japanese Bobtail cat</li>
+                    <li>Javanese cat</li>
+                    <li>Khao Manee cat</li>
+                    <li>Korat cat</li>
+                    <li>LaPerm cat</li>
+                    <li>Maine Coon cat</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Selkirk Rex cat</li>
+                    <li>Siamese cat</li>
+                    <li>Singapura cat</li>
+                    <li>Snowshoe cat</li>
+                    <li>Somali cat</li>
+                    <li>Sphynx cat</li>
+                    <li>Tonkinese cat</li>
+                    <li>Turkish Angora cat</li>
+                    <li>Turkish Van cat</li>
+                    <li>British Shorthair cat</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Burmese cat</li>
+                    <li>Chartreux cat</li>
+                    <li>Cornish Rex cat</li>
+                    <li>Devon Rex cat</li>
+                    <li>Pixie-bob cat</li>
+                    <li>Ragdoll cat</li>
+                    <li>Russian Blue cat</li>
+                    <li>Savannah cat</li>
+                    <li>Scottish Fold cat</li>
+                    <li>Asian cat</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Balinese cat</li>
+                    <li>Bengal cat</li>
+                    <li>Birman cat</li>
+                    <li>Bombay cat</li>
+                    <li>Norwegian Forest cat</li>
+                    <li>Ocicat cat</li>
+                    <li>Oriental Shorthair cat</li>
+                    <li>Persian cat</li>
+                    <li>Peterbald cat</li>
+                </ul>
+            </div>
+        </div>
+        <p>All time favorites:</p>
+        <ol>
+            <li>Maine Coon Cats 😲</li>
+            <li>Siamese Cats 😃</li>
+            <li>Scottish Fold Cats 😊</li>
+            <li>Bengal Cats 😋</li>
+            <li>American Shorthair Cats 😚</li>
         </ol>
         <dl>
             <dt>I want a cat</dt>
