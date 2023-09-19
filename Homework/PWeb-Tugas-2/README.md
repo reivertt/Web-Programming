@@ -3,5 +3,5 @@
  
  Kalkulator menggunakan HTML, CSS, dan Javascript
 
- Nama: Muhammad Nabil Akhtar Raya Amoriza
- NRP: 5025221021
+ - Nama: Muhammad Nabil Akhtar Raya Amoriza
+ - NRP: 5025221021
