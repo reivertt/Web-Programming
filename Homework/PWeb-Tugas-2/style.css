@@ -1,0 +1,102 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #343a40;
+    color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1, h5 {
+    text-align: center;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+#burikku, #bagush {
+    border: none;
+    width: 50%;
+    height: 100px;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.4);
+    color: #f8f9fa;
+}
+
+#burikku {
+    background-color: #343a40;
+}
+
+#bagush {
+    background-color: #718355;
+    /* a4133c */
+}
+
+#bagus {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#burik input, .opp {
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+#bagus {
+    background-color: #e9ecef;
+}
+
+#bagus #displays {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;;
+    display: flex;
+    flex-direction: column;
+}
+
+#bagus input {
+    text-align: right;
+    border: none;;
+}
+
+#bagus input:focus{
+    outline:none;
+}
+
+#display_main {
+    font-size: 25px;
+}
+
+#display_log {
+    color: rgb(113, 113, 113);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.wide {
+    grid-column: 1 / span 5;
+}
+
+#bagus button {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    margin: 1px;
+    background-color: #ced4da;
+}

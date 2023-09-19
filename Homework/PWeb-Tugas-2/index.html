@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supposed Dynamic Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="nav_container">
+        <button onclick="lama()" id="burikku">Classic</button>
+        <button onclick="bagus()" id="bagush">New</button>
+    </div>
+
+    <h1>Calculator</h1>    
+    <div id="burik">
+        <input type="text" name="input_one" id="input_one">
+        <input type="text" name="input_two" id="input_two">
+        <div class="buttons">
+            <button onclick="sum()" class="opp" id="sum">+</button>
+            <button onclick="sub()" class="opp" id="subtract">-</button>
+            <button onclick="mul()" class="opp" id="multiply">*</button>
+            <button onclick="div()" class="opp" id="div">/</button>
+        </div>
+        
+        <span>Result = </span><span id="result"></span>
+    </div>
+    <div id="bagus">
+        <div class="grid">
+            <div id="displays" >
+                <input type="text"  id="display_log">
+                <input type="text"  id="display_main">
+            </div>
+            <button onclick="disp('7')" >7</button>
+            <button onclick="disp('8')" >8</button>
+            <button onclick="disp('9')" >9</button>
+            <button onclick="del()" >del</button>
+            <button onclick="clr()"     >c</button>
+            
+            <button onclick="disp('4')" >4</button>
+            <button onclick="disp('5')" >5</button>
+            <button onclick="disp('6')" >6</button>
+            <button onclick="disp('*')" >×</button>
+            <button onclick="disp('/')" >÷</button>
+            
+            <button onclick="disp('1')" >1</button>
+            <button onclick="disp('2')" >2</button>
+            <button onclick="disp('3')" >3</button>
+            <button onclick="disp('+')" >+</button>
+            <button onclick="disp('-')" >-</button>
+            
+            <button onclick="disp('0')" >0</button>
+            <button onclick="disp('.')" >.</button>
+            <button onclick="result()" style="grid-column: 3 / span 3;">=</button>
+        </div>
+    </div>
+</body>
+</html>
