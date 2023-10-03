@@ -20,7 +20,7 @@ function getWeather() {
                     <img src="${weatherData.condition.icon}" width="100">
                     <span style="font-size:64px;">${weatherData.temp_c}</span><span class="fs-3">°C</span>
                     <div class="ms-3">
-                        <span class="fs-5 text-secondary">
+                        <span class="fs-5">
                             Feels Like: ${weatherData.feelslike_c}°C
                             <br>
                             Humidity: ${weatherData.humidity}%
@@ -31,12 +31,17 @@ function getWeather() {
                 </div>
                 <div class="ms-5 d-flex flex-column">
                     <span class="fs-1 text-end">${weatherData.condition.text}</span>
-                    <span class="fs-4 text-secondary text-end">${locationData.localtime}</span>
+                    <span class="fs-4 text-end">${locationData.localtime}</span>
                 </div>
             </div>
             `;
-                    document.getElementById('weatherInfo').innerHTML = weatherInfo;
-                },
+            document.getElementById('weatherInfo').innerHTML = weatherInfo;
+            const temp = response.current.temp_c;
+            if (temp < 10) document.body.style.backgroundColor = "#7D97F5";
+            else if (temp < 20) document.body.style.backgroundColor = "#7DF58E"
+            else if (temp < 30) document.body.style.backgroundColor = "#F5D682";
+            else document.body.style.backgroundColor = "#F57975";
+        },
         error: function(error) {
             console.error('Error:', error);
             document.getElementById('weatherInfo').innerText = 'Error fetching weather data.';
