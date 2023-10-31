@@ -43,6 +43,25 @@
         "vue":        "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.41/vue.esm-browser.prod.js"
     } }
 </script>
-<script type="module" src="app.js"></script>
+<script type="module">
+    import { createApp } from 'vue'
+    createApp({
+        data(){
+            return{
+                total: 0
+            }
+        },
+        methods: {
+            key(num) {
+                if (this.total == 0) return this.total = num;
+                    return this.total += String(num);
+                }, clear(){
+                    return this.total = 0;
+                }, equal(){
+                    return this.total = eval(this.total);
+                }
+        }
+    }).mount('#app')
+</script>
 </body>
 </html>
